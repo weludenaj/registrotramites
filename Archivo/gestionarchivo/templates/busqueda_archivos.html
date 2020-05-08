@@ -1,0 +1,25 @@
+
+{% load static %}
+<html>
+
+<head>
+
+    <title>
+        Busqueda de Archivos
+    </title>
+    <link rel="stylesheet" href="{% static 'css/foundation.min.css' %}">
+</head>
+<body>
+    <h1 class="ejemplo2">Hola probando estilos</h1>
+    <a href="about.html" class="button">Learn More</a>
+    <a href="#features" class="button">View All Features</a>
+
+<!-- Buttons (actions) -->
+    <button type="button" class="success button">Save</button>
+    <button type="button" class="alert button">Delete</button>
+    <form action="/buscar/" method="POST">{% csrf_token %}
+        <input type="text" name="prd" rows=2 cols=15> 
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>

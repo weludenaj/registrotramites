@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>
+        Busqueda de Archivos
+    </title>
+</head>
+<body>
+
+    <form action="/buscarfecha/" method="POST">{% csrf_token %}
+        <input type="date" name="prd"> 
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>

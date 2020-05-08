@@ -1,0 +1,18 @@
+<html>
+<body>
+<p> Estas buscando:<strong>{{query}}</strong></p>
+{% if registro %}
+    <p>Registros Encontrados: {{registro|length}} registros</p>
+    <ul>
+        {% for registros in registro%}
+        <li>
+            {{registros.usuario}} &nbsp; {{registros.descripcion}}
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No esta el articulo encontrado</p>
+{% endif %}
+</body>
+
+</html>
