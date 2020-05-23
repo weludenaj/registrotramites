@@ -81,8 +81,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'AlcaldiaArchivo',
-        'USER' : 'secretaria',
-        'PASSWORD': 'lvembdqtc1976',
+        'USER' : 's__________a',
+        'PASSWORD': 'l************76',
         'HOST':'127.0.0.1',
         'DATABASE_PORT': '5432',
     }
